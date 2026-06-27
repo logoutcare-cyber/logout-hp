@@ -71,20 +71,6 @@
   .btn-secondary{border:1px solid var(--line); color:var(--text);}
   .hero-note{font-size:12px; color:var(--muted);}
 
-  .terminal{
-    margin-top:40px; background:var(--panel); border:1px solid var(--line);
-    border-radius:10px; overflow:hidden; font-family:var(--mono); font-size:13px;
-  }
-  .terminal-bar{
-    display:flex; align-items:center; gap:6px; padding:10px 14px;
-    border-bottom:1px solid var(--line); background:var(--panel-2);
-  }
-  .terminal-bar span{width:9px; height:9px; border-radius:50%; background:#3a443c;}
-  .terminal-bar .label{margin-left:8px; color:var(--muted); font-size:11px;}
-  .terminal-body{padding:18px 20px; color:#b8c2bb;}
-  .terminal-body .cmd{color:var(--accent);}
-  .terminal-body .out{color:var(--muted); margin:4px 0 14px;}
-
   .stat-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:1px; background:var(--line); margin-top:48px; border:1px solid var(--line); border-radius:10px; overflow:hidden;}
   @media(min-width:600px){ .stat-grid{grid-template-columns:repeat(4,1fr);} }
   .stat{background:var(--panel); padding:22px 18px;}
@@ -208,7 +194,6 @@
 
   <!-- 1. HERO -->
   <section class="hero wrap">
-    <span class="eyebrow">退職代行サービス</span>
     <h1>その職場、<br>もう<span class="hl">ログアウト</span>していい。</h1>
     <p class="sub">出社せず、上司と話さず、スマホひとつで退職の意思を会社にお伝えします。正社員17,000円、アルバイト10,000円。追加費用はありません。</p>
     <div class="hero-ctas">
@@ -216,20 +201,6 @@
       <a href="#flow" class="btn btn-secondary">サービスの流れを見る</a>
     </div>
     <p class="hero-note">※ 相談は何度でも無料。LINE・電話・メールに対応。</p>
-
-    <div class="terminal">
-      <div class="terminal-bar">
-        <span></span><span></span><span></span>
-        <span class="label">session — logout.jp</span>
-      </div>
-      <div class="terminal-body">
-        <div class="cmd">$ whoami</div>
-        <div class="out">→ お疲れさまでした。今日まで本当に。</div>
-        <div class="cmd">$ status --check</div>
-        <div class="out">→ ストレス: 高　退職意思: 確定　残り出社日数: 0でいい</div>
-        <div class="cmd">$ logout --notify-company --silent_</div>
-      </div>
-    </div>
 
     <div class="stat-grid">
       <div class="stat"><div class="num">最短即日</div><div class="label">退職手続き開始</div></div>
@@ -247,8 +218,8 @@
   </section>
 
   <!-- 2. なぜ必要か（不安の共感） -->
-  <section class="wrap">
-    <span class="eyebrow">こんな状態、ありませんか</span>
+  <section class="wrap" style="padding-top:88px;">
+    <p class="lead" style="margin-bottom:8px; color:var(--text); font-size:14px;">こんな状態、ありませんか</p>
     <h2>辞めると言えないまま、毎日ログインし続けている。</h2>
     <div class="trust-grid">
       <div class="trust-card">
@@ -271,8 +242,7 @@
   </section>
 
   <!-- 3. 信頼性・安心材料 -->
-  <section class="wrap" id="trust">
-    <span class="eyebrow">Why Logout</span>
+  <section class="wrap" id="trust" style="padding-top:88px;">
     <h2>ログアウトが選ばれる理由</h2>
     <p class="lead">退職は誰にでも認められた権利です。安心して任せられる仕組みを整えています。</p>
     <div class="trust-grid">
@@ -300,8 +270,7 @@
   </section>
 
   <!-- 4. サービス内容（対応範囲の明示） -->
-  <section class="wrap" id="scope">
-    <span class="eyebrow">サービス内容</span>
+  <section class="wrap" id="scope" style="padding-top:88px;">
     <h2>対応できること・できないこと</h2>
     <p class="lead">ログアウトは弁護士・労働組合ではない民間企業です。法律で定められた業務範囲を守り、できないことは正直にお伝えします。</p>
     <div class="scope-grid">
@@ -331,14 +300,13 @@
   </section>
 
   <!-- 5. 料金 -->
-  <section class="wrap" id="pricing">
-    <span class="eyebrow">Pricing</span>
+  <section class="wrap" id="pricing" style="padding-top:88px;">
     <h2>料金はシンプルに、ふたつだけ。</h2>
     <p class="lead">最初のお支払いだけで、意思伝達の完了まで対応します。途中で追加料金が発生することはありません。</p>
     <div class="price-grid">
       <div class="price-card">
         <span class="tag">アルバイト・パート</span>
-        <h3>スピード退職プラン</h3>
+        <h3>アルバイト・パートプラン</h3>
         <div class="amount">10,000<span class="yen">円（税込）</span></div>
         <ul>
           <li>退職意思の会社への伝達を代行</li>
@@ -348,7 +316,7 @@
       </div>
       <div class="price-card">
         <span class="tag">正社員・契約社員</span>
-        <h3>フルサポート退職プラン</h3>
+        <h3>正社員・契約社員プラン</h3>
         <div class="amount">17,000<span class="yen">円（税込）</span></div>
         <ul>
           <li>退職意思の会社への伝達を代行</li>
@@ -364,8 +332,7 @@
   </section>
 
   <!-- 6. 利用の流れ -->
-  <section class="wrap" id="flow">
-    <span class="eyebrow">How it works</span>
+  <section class="wrap" id="flow" style="padding-top:88px;">
     <h2>4ステップで完了します</h2>
     <p class="lead">申し込みから退職の意思伝達まで、あなたがやることはほとんどありません。</p>
     <div class="flow-list">
@@ -401,8 +368,7 @@
   </section>
 
   <!-- 7. FAQ -->
-  <section class="wrap" id="faq">
-    <span class="eyebrow">FAQ</span>
+  <section class="wrap" id="faq" style="padding-top:88px;">
     <h2>よくある質問</h2>
 
     <details class="faq-item" open>
@@ -437,8 +403,7 @@
   </section>
 
   <!-- 8. 会社概要 -->
-  <section class="wrap" id="company">
-    <span class="eyebrow">Company</span>
+  <section class="wrap" id="company" style="padding-top:88px;">
     <h2>会社概要</h2>
     <table class="company-table">
       <tr><th>サービス名</th><td>退職代行「ログアウト」</td></tr>
